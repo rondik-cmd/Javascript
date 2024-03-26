@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="yahtzee rondik js.js"></script>
+    <link rel="stylesheet" href="yahtzee rondik css.css">
+    <link rel="icon" type="image/x-icon" href="images/dobbelsteen favicon.ico">
+    <title>Yahtzee</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <div class="titel"><p class="titel">Yahtzee</p></div>
+
+      <div class="rol">
+        <button onclick="rolDobbelsteen()" class="rol-knop">ROLL</button>
+      </div>
+
+      <div class="dobbelsteen1">
+        <img onclick="houVastDobbelsteen(1,this)" id="dobbelsteen1" src="images/dice 1.png" />
+      </div>
+      <div class="dobbelsteen2">
+        <img onclick="houVastDobbelsteen(2,this)" id="dobbelsteen2" src="images/dice 1.png" />
+      </div>
+      <div class="dobbelsteen3">
+        <img onclick="houVastDobbelsteen(3,this)" id="dobbelsteen3" src="images/dice 1.png" />
+      </div>
+      <div class="dobbelsteen4">
+        <img onclick="houVastDobbelsteen(4,this)" id="dobbelsteen4" src="images/dice 1.png" />
+      </div>
+      <div class="dobbelsteen5">
+        <img onclick="houVastDobbelsteen(5,this)" id="dobbelsteen5" src="images/dice 1.png" />
+      </div>
+
+      <br /><br />
+      <div class="rollenOver">
+        <button id="rollenOver" class="rollenOver-knop">3</button>
+      </div>
+      <div class="vernieuwen">
+        <button class="vernieuwen-knop" onclick=wisselSpeler()>
+          Switch<br />Speler
+        </button>
+      </div>
+
+      <table>
+        <tr>
+          <th></th>
+          <th>Speler 1</th>
+          <th>Speler 2</th>
+        </tr>
+        <tr>
+          <td>Ones</td>
+          <td>
+            <button
+              class="scorebord"
+              id="enenSpeler1"
+              onclick="selecteerEnenSpeler1()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="scorebord"
+              id="enenSpeler2"
+              onclick="selecteerEnenSpeler2()"
+            ></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Twos</td>
+          <td>
+            <button
+              class="scorebord"
+              id="tweeënSpeler1"
+              onclick="selecteerTweeënSpeler1()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="scorebord"
+              id="tweeënSpeler2"
+              onclick="selecteerTweeënSpeler2()"
+            ></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Threes</td>
+          <td>
+            <button
+              class="scorebord"
+              id="drieënSpeler1"
+              onclick="selecteerDrieënSpeler1()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="scorebord"
+              id="drieënSpeler2"
+              onclick="selecteerDrieënSpeler2()"
+            ></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Fours</td>
+          <td>
+            <button
+              class="scorebord"
+              id="vierenSpeler1"
+              onclick="selecteerVierenSpeler1()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="scorebord"
+              id="vierenSpeler2"
+              onclick="selecteerVierenSpeler2()"
+            ></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Fives</td>
+          <td>
+            <button
+              class="scorebord"
+              id="vijvenSpeler1"
+              onclick="selecteerVijvenSpeler1()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="scorebord"
+              id="vijvenSpeler2"
+              onclick="selecteerVijvenSpeler2()"
+            ></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Sixs</td>
+          <td>
+            <button
+              class="scorebord"
+              id="zessenSpeler1"
+              onclick="selecteerZessenSpeler1()"
+            ></button>
+          </td>
+          <td>
+            <button
+              class="scorebord"
+              id="zessenSpeler2"
+              onclick="selecteerZessenSpeler2()"
+            ></button>
+          </td>
+        </tr>
+        <tr>
+            <td>
+              Three Of a Kind
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="threeOfaKindSpeler1"
+              onclick="threeOfAKindSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="threeOfaKindSpeler2"
+              onclick="threeOfAKindSpeler2()"
+              ></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Four Of a Kind
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="fourOfaKindSpeler1"
+              onclick="fourOfAKindSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="fourOfaKindSpeler2"
+              onclick="fourOfAKindSpeler2()"
+              ></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Full House
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="fullHouseSpeler1"
+              onclick="fullHouseSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="fullHouseSpeler2"
+              onclick="fullHouseSpeler2()"
+              ></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Small Straight
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="smallStraightSpeler1"
+              onclick="smallStraightSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="smallStraightSpeler2"
+              onclick="smallStraightSpeler2()"
+              ></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Large Straight
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="largeStraightSpeler1"
+              onclick="largeStraightSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="largeStraightSpeler2"
+              onclick="largeStraightSpeler2()"
+              ></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Yahtzee
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="yahtzeeSpeler1"
+              onclick="yahtzeeSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="yahtzeeSpeler2"
+              onclick="yahtzeeSpeler2()"
+              ></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              total
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="totaalSpeler1"
+              onclick="totaalSpeler1()"
+              ></button>
+            </td>
+            <td>
+              <button
+              class="scorebord"
+              id="totaalSpeler2"
+              onclick="totaalSpeler2()"
+              ></button>
+            </td>
+          </tr>
+      </table>
+    </div>
+  </body>
+</html>

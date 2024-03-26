@@ -1,0 +1,192 @@
+body {
+    background-image: url(background.jpeg);
+    background-size: 100%;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    grid-auto-rows: 50px;
+  }
+  .titel {
+    grid-column: 1/21;
+    text-align: center;
+    grid-row: 1;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  .rol {
+    grid-column: 1/21;
+    text-align: center;
+    grid-row: 3;
+  }
+  .rol-knop {
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: 1s;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .rol-knop:hover {
+    background-color: rgba(6, 199, 193, 0.5);
+    transition: 1s;
+    transform: scale(1.5);
+    border-radius: 30px;
+  }
+  .dobbelsteen1 {
+    grid-column: 6/8;
+    text-align: center;
+    grid-row: 4;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .dobbelsteen1:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    filter: drop-shadow(0px 0px 10px rgb(6, 199, 192));
+    z-index: 1;
+  }
+  #dobbelsteen1 {
+    width: 50%;
+    border-radius: 5px;
+  }
+  .dobbelsteen2 {
+    grid-column: 6/8;
+    text-align: center;
+    grid-row: 7;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .dobbelsteen2:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    filter: drop-shadow(0px 0px 10px rgb(6, 199, 192));
+    z-index: 1;
+  }
+  #dobbelsteen2 {
+    width: 50%;
+    border-radius: 5px;
+  }
+  .dobbelsteen3 {
+    grid-column: 7/9;
+    text-align: center;
+    grid-row: 5;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .dobbelsteen3:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    filter: drop-shadow(0px 0px 10px rgb(6, 199, 192));
+    z-index: 1;
+  }
+  #dobbelsteen3 {
+    width: 50%;
+    border-radius: 5px;
+  }
+  .dobbelsteen4 {
+    grid-column: 8/10;
+    text-align: center;
+    grid-row: 4;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .dobbelsteen4:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    filter: drop-shadow(0px 0px 10px rgb(6, 199, 192));
+    z-index: 1;
+  }
+  #dobbelsteen4 {
+    width: 50%;
+    border-radius: 5px;
+  }
+  .dobbelsteen5 {
+    grid-column: 8/10;
+    text-align: center;
+    grid-row: 7;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .dobbelsteen5:hover {
+    transform: scale(1.5);
+    transition: 1s;
+    filter: drop-shadow(0px 0px 10px rgb(6, 199, 192));
+    z-index: 1;
+  }
+  #dobbelsteen5 {
+    width: 50%;
+    border-radius: 5px;
+  }
+  .rollenOver {
+    grid-column: 6/8;
+    text-align: center;
+    grid-row: 3;
+  }
+  .rollenOver-knop {
+    height: 45px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, 0);
+    backdrop-filter: blur(1px);
+    color: rgb(6, 199, 193);
+    border-color: rgb(6, 199, 193);
+  }
+  .vernieuwen {
+    grid-column: 8/10;
+    text-align: center;
+    grid-row: 3;
+  }
+  .vernieuwen-knop {
+    height: 45px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, 0);
+    backdrop-filter: blur(1px);
+    color: rgb(6, 199, 193);
+    border-color: rgb(6, 199, 193);
+  }
+  table {
+    background-color: rgba(6, 199, 193, 0.5);
+    grid-column: 13/18;
+    grid-row: 1/10;
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(10px 10px 10px rgb(6, 199, 192));
+  }
+  tr {
+    background-color: rgb(6, 199, 193, 0.5);
+    border-radius: 10px;
+  }
+  th {
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  td {
+    text-align: center;
+  }
+  .scorebord {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(6, 199, 193);
+    transition: 1s;
+  }
+  .scorebord:hover {
+    transform: scale(1.4);
+    font-stretch: 1.5;
+    transition: 1s;
+  }

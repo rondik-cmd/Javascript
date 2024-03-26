@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jatce.js"></script>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <div class="title"><p class="title">Yahtzee</p></div>
+
+      <div class="roll"><button onclick="rollDice()" class="roll-button">ROLL</button></div>
+
+      <div class="dice1"><img onclick="holdDie(1,this)" id="dice1" src="dice 1.png"></div>
+      <div class="dice2"><img onclick="holdDie(2,this)" id="dice2" src="dice 1.png"></div>
+      <div class="dice3"><img onclick="holdDie(3,this)" id="dice3" src="dice 1.png"></div>
+      <div class="dice4"><img onclick="holdDie(4,this)" id="dice4" src="dice 1.png"></div>
+      <div class="dice5"><img onclick="holdDie(5,this)" id="dice5" src="dice 1.png"></div>
+
+      <br><br>
+      <div class="rollsleft"><button id="rollsLeft" class="rollsleft-button">3</button></div>
+      <button class="refresh" onclick="window.location.reload()">Switch<br>Player</button>
+    </div>
+    
+</body>
+<style>
+  body{
+    background-image: url(background.png);
+    background-size: 100%;
+  }
+
+  .grid-layout{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    grid-auto-rows: 50px;
+  }
+.title{
+  grid-column: 1/21 ;
+  text-align: center;
+  grid-row: 1;
+  font-size: 30px;
+}
+.roll{
+  grid-column: 1/21 ;
+  text-align: center;
+  grid-row: 3;
+}
+.roll-button{
+  width: 10%;
+  height: 40px;
+}
+.dice1{
+grid-column: 6/8;
+text-align: center;
+grid-row: 4;
+}
+#dice1{
+  width: 50%;
+  border-radius: 5px;
+}
+.dice2{
+grid-column: 8/10;
+text-align: center;
+grid-row: 6;
+}
+#dice2{
+  width: 50%;
+  border-radius: 5px;
+}
+.dice3{
+grid-column: 10/12;
+text-align: center;
+grid-row: 4;
+}
+#dice3{
+  width: 50%;
+  border-radius: 5px;
+}
+.dice4{
+grid-column: 12/14;
+text-align: center;
+grid-row: 6;
+}
+#dice4{
+  width: 50%;
+  border-radius: 5px;
+}
+.dice5{
+grid-column: 14/16;
+text-align: center;
+grid-row: 4;
+}
+#dice5{
+  width: 50%;
+  border-radius: 5px;
+}
+.rollsleft{
+  grid-column: 5/7;
+  text-align: center;
+  grid-row: 4;
+  width: 50px;
+}
+.rollsleft-button{
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 0);
+  backdrop-filter: blur(1px);
+  color: white;
+  border-color: white;
+}
+
+</style>
+
+  
+</html>
